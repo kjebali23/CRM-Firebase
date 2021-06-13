@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="./indexStyle.css">
+    <link rel="stylesheet" href="./indexStyle2.css">
+    
+
+
+</head>
+<body >
+    <header>
+        
+        <nav>
+            <ul class="nav-area">
+<li><a href="#">Acceuil</a></li>
+<li><a href="Clients.html">Clients</a></li>
+<li><a href="opp.html">Opportunitées</a></li>
+<li><a href="lead.html">Leads</a></li>
+<li><a href="entreprise.html">Entreprises</a></li>
+</ul>
+</nav>
+        <a href="#" id="logout" class="btn-area">Se deconnecter</a>
+    </header>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <div class="numbers"> <div class="Nclients"></div>   </div>
+                <div class="cardName"><a href="Clients.html">Clients</a></div>
+            </div>
+            <div class="iconBox">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="numbers"><div class="Nopp"></div> </div>
+                <div class="cardName"><a href="opp.html">Opportunitées</a></div>
+            </div>
+            <div class="iconBox">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="numbers"><div class="Nlead"></div></div>
+                <div class="cardName"><a href="lead.html">Leads</a></div>
+            </div>
+            <div class="iconBox">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <div class="numbers"><div class="Nentreprise"></div>
+                <div class="cardName"><a href="entreprise.html">Entreprise</a></div>
+            </div>
+            <div class="iconBox">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+        </div>
+      </div>
+
+
+      
+          
+    </div>
+    <div class="container">
+       
+          <h3>Salut vous êtes connecté en tant que :<br> <div class="userName"></div>  </h3>
+            <div class="text">
+                    <p>Vous pouvez consulter, ajouter , modifier et supprimer:</p>
+                    <p>- Les Clients</p>
+                    <p>- Les Opportunitées</p>
+                    <p>- Les Leads</p>
+                    <p>- Les Entreprises</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+   
+        
+
+
+
+
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCRhfAGqrnztyXjIBjCsPtxWnoS4rHOvFk",
+    authDomain: "crm-project-4eed9.firebaseapp.com",
+    projectId: "crm-project-4eed9",
+    storageBucket: "crm-project-4eed9.appspot.com",
+    messagingSenderId: "793828577730",
+    appId: "1:793828577730:web:82143976ed0e811c31065b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db =firebase.firestore();
+
+  //make auth 
+  const auth = firebase.auth();
+  
+</script>
+
+<script src="Logout.js"></script>
+<script src="indexscript.js"></script>
+
+
+
+
+</body>
+</html>

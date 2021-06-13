@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="Login-style.css">
+  </head>
+  <body>
+    <div class="center">
+      <h1>Accéder a votre compte</h1>
+      <form method="post" id="login-form">
+        <div class="txt-field">
+          <input id="email" placeholder="Email" type="email" required>
+          
+        </div>
+        <div class="txt-field">
+          <input id="pass" type="password" placeholder="Mot de passe" required minlength="6">
+          
+        </div>
+        <div class="pass">Mot de pass oublié?</div>
+        <input type="submit" value="se connecter">
+        <div class="sign-up">
+          Pas membre? <a href="Signup.html">Créer un compte</a>
+        </div>
+        <p class="error"></p>
+      </form>
+    </div>
+
+
+
+
+
+
+
+    
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCRhfAGqrnztyXjIBjCsPtxWnoS4rHOvFk",
+    authDomain: "crm-project-4eed9.firebaseapp.com",
+    projectId: "crm-project-4eed9",
+    appId: "1:793828577730:web:82143976ed0e811c31065b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  //make auth and firestore reference
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+  
+</script>
+<script src="auth2.js"></script>
+
+    
+
+
+  </body>
+</html>

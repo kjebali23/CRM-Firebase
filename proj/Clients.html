@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clients</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./indexStyle.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+        <ul class="nav-area">
+<li><a href="index.html">Acceuil</a></li>
+<li><a href="#">Clients</a></li>
+<li><a href="opp.html">Opportunitées</a></li>
+<li><a href="lead.html">Lead</a></li>
+<li><a href="entreprise.html">Entreprises</a></li>
+</ul>
+</nav>
+<a href="#" id="logout" class="btn-area">Se deconnecter</a>
+</header>
+
+
+
+
+
+
+
+
+
+  <div class="container">
+    <header>
+      <h3>Clients</h3>
+    </header>
+    <div class="table-wrapper">
+      <table class="table-users" id="ctable">
+        <tr>
+          <th>Prénom</th>
+          <th>Nom</th>
+          <th>Télephone</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </table>
+      <button class="btn btn-add">Ajouter Client</button>
+    </div>
+    <!-- Add Modal -->
+    <div class="add-modal modal-wrapper">
+      <div class="modal">
+        <div class="modal-header"><h3>Ajouter un nouveau client</h3></div>
+        <div class="modal-body">
+          <form class="form" autocomplete="off">
+            <input type="text" name="firstName" placeholder="Prénom" required>
+            <input type="text" name="lastName" placeholder="Nom" required>
+            <input type="number" name="phone" placeholder="Télephone" required maxlength="8">
+            <input type="email" name="email" placeholder="Email" required>
+            <button class="btn btn-modal">Ajouter</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="edit-modal modal-wrapper">
+      <div class="modal">
+        <div class="modal-header"><h3>Modifier Client</h3></div>
+        <div class="modal-body">
+          <form class="form" autocomplete="off">
+            <input type="text" name="firstName" placeholder="Prénom" required >
+            <input type="text" name="lastName" placeholder="Nom" required>
+            <input type="number" name="phone" placeholder="Télephone" required maxlength="8">
+            <input type="email" name="email" placeholder="Email" required>
+            <button class="btn btn-modal">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+   
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCRhfAGqrnztyXjIBjCsPtxWnoS4rHOvFk",
+    authDomain: "crm-project-4eed9.firebaseapp.com",
+    projectId: "crm-project-4eed9",
+    storageBucket: "crm-project-4eed9.appspot.com",
+    messagingSenderId: "793828577730",
+    appId: "1:793828577730:web:82143976ed0e811c31065b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db =firebase.firestore();
+  //make auth 
+  const auth = firebase.auth();
+</script>
+  <script src="./script.js"></script>
+  <script src="Logout.js"></script>
+  <script src="access.js"></script>
+  
+ 
+</body>
+</html>

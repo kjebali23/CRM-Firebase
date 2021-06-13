@@ -1,0 +1,152 @@
+*{  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;     
+}
+body{
+  background-color: lightblue;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 16px;          
+}
+
+a{
+  text-decoration: none;
+}
+header{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 70px;
+  background-color: DeepSkyBlue;
+}
+.logo{
+  cursor: pointer;
+}
+.nav-area{
+  list-style: none;
+}
+.nav-area li{
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+.nav-area li a{
+  transition: all .3s ease 0s;
+  color: #fff;
+}
+.nav-area li a:hover{
+  color: #006C87;
+}
+.btn-area {
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: #006C87;            
+}
+
+.cardBox{
+  position: relative;
+  width:100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+}
+
+.cardBox .card{
+  position : relative;
+  background-color:lightblue;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.cardBox .card .numbers{
+  position: relative;
+  font-size: 2em;
+  font-weight: 500;
+}
+.cardBox .card .cardName{
+  color:#999;
+}
+
+.cardBox .card .iconBox{
+  font-size: 2.5em;
+  color:#03a9f4;
+}
+
+
+.container {
+  padding-top: 0px;
+  max-width: 40rem;
+  margin: 2rem auto;
+  padding-bottom: 2rem;
+  -webkit-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 22px -6px rgba(0,0,0,0.75);
+  text-align: center;
+  background-color: white;
+  color:rgb(21, 15, 107);
+}
+.text{
+  text-align: left;
+  padding-left: 10%;
+  padding-top : 5%;
+  color:DeepSkyBlue;
+}
+
+
+
+
+
+
+
+
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-top: 30px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
